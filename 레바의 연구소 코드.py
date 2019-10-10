@@ -43,8 +43,8 @@ def calen(n, items):
     z = 0
     A = calendar.monthrange(2019,n)
     X = ['']*35
-    Y = [['']*7, ['']*7, ['']*7, ['']*7, ['']*7]
-    D = [['']*7, ['']*7, ['']*7, ['']*7, ['']*7]
+    Y = [['']*7 for i in rsnge(5)]
+    D = [['']*7 for i in rsnge(5)]
     for i in range (0, A[1]):
         X[i+A[0]] = i+1
     for i in range (0, 5):
